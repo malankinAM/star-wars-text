@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <section>
+      <div id="titles">
+            <div id="titlecontent">
+                  Как могу передать тепло моих чувств, <br> когда речь заходит о моей драгоценной Алле? <br> Каждый момент с ней наполнен любовью и заботой, <br> словно каждый вздох - молитва о ее счастье. <br> В глазах Аллы я вижу мир, в котором я хочу пребывать вечно. <br> Ее улыбка - мой источник вдохновения, <br> а ее ласка - мое укрытие от бурь. <br> Моя родная девочка Алла - воплощение моего сердца.
+                  ps 
+                  Алешка картошка
+            </div>
+
+           
+            </div>
+            <img src="./photo1717413134 (2).jpeg" alt="" сlass="center" style="width: 300px; height: 300px;">
+            <div class="fireworks">
+                  <div class="firework" style="top: 50%; left: 50%;"></div>
+            </div>
+     </section>  
+     
+     <script>
+      function createFirework() {
+            const firework = document.createElement('div');
+            firework.classList.add('firework');
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            firework.style.top = `${y}px`;
+            firework.style.left = `${x}px`;
+            document.querySelector('.fireworks').appendChild(firework);
+            setTimeout(() => {
+                  firework.remove();
+            }, 1000);
+      }
+      setInterval(createFirework, 100);
+</script>
+          
+</body>
+</html>
